@@ -1,0 +1,13 @@
+Write a binomial tree program to calculate the call and put prices of European and American options. 
+
+Inputs: 
+S (stock price at time = 0), 
+X (strike price), 
+s (annual volatility in percentage), 
+t (maturity in years), 
+n (the number of periods), 
+r (interest rate in percentage). 
+
+For example, suppose S = 100, X = 95, s = 25%, t = 1, n = 300, and r = 3%. 
+For European options, the call price is about 13.9640 and the put price is about 6.1564. 
+For American options, the call price is about 13.9640 and the put price is about 6.3440.

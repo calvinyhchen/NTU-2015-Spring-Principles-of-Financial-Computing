@@ -1,0 +1,15 @@
+Write a program to price European-style Asian single-barrier up-and-out calls based on the CRR binomial tree. Output the delta, too. 
+
+The payoff at expiration date is max(average - X, 0) if the running average never touches or penetrates the barrier and 0 if otherwise. 
+
+Inputs: 
+S (stock price at time 0), 
+X (strike price), 
+H (barrier, which is higher than S), 
+t (maturity in years), 
+s (%) (annual volatility), 
+r (%) (continuously compounded annual interest rate), 
+n (number of periods), 
+k (number of states per node). 
+
+For example, when S = 100, X = 80, H = 130, t = 1 (years), s = 30%, r = 10%, n = 100, and k = 300, the price is about 17.2982 and the delta is about 0.3152.

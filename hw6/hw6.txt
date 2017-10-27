@@ -1,0 +1,17 @@
+Write a program to price an x-year European call option on a zero-coupon bond that matures at year y with a par value of 1 dollar. 
+
+Use a binomial tree for the Ho-Lee model. 
+
+Assume the market spot rate curve is r(t) = E - Fe-Gt (annualized and continuously compounded). 
+
+Inputs: 
+x (year), 
+y (year), 
+s (%) (constant annualized volatility of short rate), 
+E, 
+F, 
+G, 
+n (the number of time periods of the tree), 
+X (strike price in % of par). 
+
+For example, the option price is about XXX (% of par) when x = 1, y = 2, E = 0.08, F = 0.05, G = 0.18, s = 10 (%), n = 30, and X = 90 (%).

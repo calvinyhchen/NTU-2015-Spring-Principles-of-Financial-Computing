@@ -1,0 +1,24 @@
+Write 2 programs for pricing European binary calls on a non-dividend-paying stock. 
+One uses a trinomial tree, and the other the Monte Carlo method. 
+
+Output its price, delta, and gamma from both. 
+
+For trinomial tree, you may use the one on pp. 644-648 of the slides. 
+(If so, the convergence may be slightly better by treating the strike price as the barrier in determining your l). 
+
+For the Monte Carlo method, one time step suffices as the lecture notes show. 
+If you use any nontrivial ideas in either the trinomial tree or Monte Carlo to improve convergence or accuracy, please write them down in your explaining notes. 
+(Antithetic variates, e.g., will not be considered nontrivial :-) 
+
+Inputs: 
+S (stock price), 
+X (strike price), 
+r (annual interest rate in percentage), 
+s (annual volatility in percentage), 
+t (year), n (total number of periods), 
+m (number of sample paths of simulation; so an antithetic method will produce twice that number of paths), 
+e (see pp. 758ff). 
+
+For example, suppose S = 100, X = 90, r = 5%, s = 40%, t = 2, n = 1000, m = 1000000, and e = 0.001. 
+For the trinomial tree, the price, delta, and gamma are about 0.47805, 0.006262, and -0.00007036, respectively. 
+For Monte Carlo, our price is around [0.48112, 0.48158], our delta is around [0.0039934, 0.0092489], and our gamma is around [-4.796, 5.1489].

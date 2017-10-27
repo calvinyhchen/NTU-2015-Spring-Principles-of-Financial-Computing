@@ -1,0 +1,8 @@
+Write a program to calculate the modified duration and convexity of a cash flow. 
+
+All numbers are period based for simplicity. 
+Settlement can fall on any time between two cash flows as on p. 71 of the lecture notes. 
+
+Inputs: (1) y (interest rate), (2) C (cash flow), (3) w (as defined in class). 
+Output: (1) modified duration and (2) convexity. 
+For example, when y = 0.05, C = [1, 2, 3, 101] and w = 0.5, the modified duration is 3.2356 and convexity 13.7300.

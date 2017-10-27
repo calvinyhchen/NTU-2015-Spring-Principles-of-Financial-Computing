@@ -1,0 +1,21 @@
+Write a binomial tree program to calculate the call and put prices of Bermuda options when there are (trading) holidays. 
+
+For Bermuda options, exercise is possible only for a specific time interval and then only at the close of each trading day during that interval. 
+Assume only Saturdays and Sundays are holidays for simplicity. 
+All dates are in the yyyy-mm-dd format. 
+
+Inputs: 
+S (stock price at the starting date), 
+X (strike price), 
+s (annual volatility in percentage), 
+T0 (starting date), 
+T1 (maturity date of option), 
+m (the number of periods per day for the tree), 
+r (annual interest rate in percentage), 
+T2 (starting date when option can be exercised). 
+T3 (final date when option can be exercised). 
+
+For example, suppose S = 100, X = 95, s = 35%, T0 = 2015-04-21, T1 = 2015-06-19, m = 2, r = 0%, T2 = 2015-05-21, and T3 = 2015-06-19. 
+The call price is about 8.4471, and the put price is about 3.4471. 
+
+Suppose we have the same parameters as above except that r = 10%. Then the call price is about 9.4205, and the put price is about 2.9370.
